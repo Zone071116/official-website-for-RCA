@@ -1,8 +1,8 @@
 <template>
     <div id="Service">
         <div class="container text-center">
-            <h3>我们的服务</h3>
-            <p style="color:#b2b2b2">The Best Service You Never See</p>
+            <h3>精彩丰富的社团活动</h3>
+            <p style="color:#b2b2b2">Colorful Activities</p>
         </div>
         <div class="container">
             <div class="Service-container row">
@@ -33,23 +33,23 @@ export default {
             serviceList: [
                 {
                     id: 'section-1',
-                    title: '软件定制开发',
-                    eng_title: 'Customize App',
+                    title: '"启先杯"机器人竞赛',
+                    eng_title: 'Qixian Cup',
                     img: require('@/assets/img/service1.jpg')
                 },{
                     id: 'section-2',
-                    title: 'IT外包服务',
-                    eng_title: 'Outsourcing',
+                    title: '机器人培训',
+                    eng_title: 'Training',
                     img: require('@/assets/img/service2.jpg')
                 },{
                     id: 'section-3',
-                    title: '网上商城建设',
-                    eng_title: 'eCommerce Site',
+                    title: '科普讲堂',
+                    eng_title: 'Lectures',
                     img: require('@/assets/img/service3.jpg')
                 },{
                     id: 'section-4',
-                    title: 'iOS应用定制开发',
-                    eng_title: 'iOS App Dev',
+                    title: '活动室开放日',
+                    eng_title: 'Open Day',
                     img: require('@/assets/img/service4.jpg')
                 }
             ]
