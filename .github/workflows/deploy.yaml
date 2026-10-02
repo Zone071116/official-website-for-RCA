@@ -19,7 +19,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 安装 Node.js（老 webpack 需要 legacy provider，Node 16 稳妥）
+      # 安装 Node.js（node 16 用 OpenSSL 1.1，不需要 legacy-provider）
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -31,8 +31,6 @@ jobs:
 
       # 构建
       - name: Build
-        env:
-          NODE_OPTIONS: "--openssl-legacy-provider"
         run: npm run build
 
       # 部署到 GitHub Pages
