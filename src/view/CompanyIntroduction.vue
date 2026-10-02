@@ -1,15 +1,15 @@
 <template>
     <div id="CompanyIntroduction">
-        <div class="banner container-fuild text-center">关于我们</div>
+        <div class="banner container-fuild text-center">关于机协</div>
         <div class="container">
             <div class="row CompanyIntroduction-container">
                 <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
                     <img class="img-responsive center-block" src="@/assets/img/about_img.png">
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
-                    <h3>网站建设文化传播有限公司</h3>
-                    <p class=".text-justify">有家软件公司, 是一家以高科技创意为核心的技术服务公司, 聚集了众多对软件开发和界面设计有独特创意的高端人才, 致力于为企业提供软件开发, 网站建设, 网页设计, IT外包, 手机应用开发, 互联网营销, 微信平台开发等解决方案。</p>
-                    <p class=".text-justify">我们的客户包括集团上市公司, 酒店, IT科技, 教育, 服装, 贸易, 外贸, 时尚, 生物, 工业, 制造等众多行业, 并树立了良好的口碑, 积累了丰富的经验和成功案例. 我们提供权威专业的互联网品牌策划, 并实施高标准的设计方案, 创造真正意义上的品牌网站, 为互联网品牌在互动行销领域创造最大价值而不懈努力!</p>
+                    <h3>北京航空航天大学机器人协会</h3>
+                    <p class=".text-justify">北京航空航天大学机器人协会，简称"北航机协"，英文全称 BUAA Robot Association。在机械工程及自动化学院的指导下，联系同学、服务同学，致力于为热爱科技创新活动的学生提供研究平台。机协的中心任务是"打造一支独立自主的高水平学生创新创业团队"，大力支持社员进行机器人科创的制作开发。2023-2024 年度共有注册会员 304 名，连续五年被评为"五星社团"。</p>
+                    <p class=".text-justify">机协的历史可以追溯到 1992 年，钟志科学长与一群爱好科技制作的同学创立了"制造技术协会"——这是机器人协会的前身。90 年代至 10 年代，协会在冯如杯、挑战杯上获奖无数。2013 年，侯涛刚学长将协会改组并正式更名为"机器人协会"，同年创办第一届"启先杯"。梁建宏（中国第一条机器鱼）、王野（九号公司创始人）、陈中元（九号公司执行总裁）等优秀校友均出自机协。我们是一支创业团队，敢为人先的创新精神激励着代代协会人。</p>
                 </div>
             </div>
         </div>

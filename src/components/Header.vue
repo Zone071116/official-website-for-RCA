@@ -1,20 +1,6 @@
 <template>
   <!-- 头部整体盒子 -->
   <div id="header" class="container-fuild">
-    <!-- 头部顶部 -->
-    <div class="header-top container-fuild hidden-xs">
-      <div class="container">
-        <div class="server pull-left">
-          <span class="glyphicon glyphicon-earphone"></span>888-888-888
-          <span class="glyphicon glyphicon-envelope"></span>xxx@163.com
-          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
-        </div>
-        <div class="shejiao pull-right">
-          <span class="glyphicon glyphicon-hand-right"></span>赶快联系我们吧！
-          <span class="glyphicon glyphicon-hand-left"></span>
-        </div>
-      </div>
-    </div>
     <!-- 电脑导航 -->
     <div class="header-nav container hidden-xs">
       <!-- 导航logo -->
@@ -41,6 +27,7 @@
           </dl>
         </li>
       </ul>
+      <div class="header-nav-title">北航机器人社</div>
     </div>
     <!-- 手机导航 -->
     <div class="header-nav-m container-fuild visible-xs">
@@ -93,21 +80,7 @@ export default {
           children: []
         },
         {
-          name: "软件产品",
-          path: "/software",
-          children: [
-            {
-              name: "智能小镇管理系统",
-              path: "/software/smartTown"
-            },
-            {
-              name: "大数据管理系统",
-              path: "/software/bigData"
-            }
-          ]
-        },
-        {
-          name: "相关服务",
+          name: "社团活动",
           path: "/service",
           children: []
         },
@@ -117,12 +90,12 @@ export default {
           children: []
         },
         {
-          name: "公司介绍",
+          name: "关于机协",
           path: "/companyintroduction",
           children: []
         },
         {
-          name: "工作机会",
+          name: "加入我们",
           path: "/jobchance",
           children: []
         },
@@ -153,7 +126,8 @@ export default {
 <style scoped>
 /* 顶部 */
 #header {
-  background: #f4f4f4;
+  background: #0d1b2a;
+  padding-top: 15px;
   transition: all ease 0.6s;
 }
 #header .header-top {
@@ -161,7 +135,7 @@ export default {
   color: #fff;
   font-size: 12px;
   line-height: 50px;
-  background: #474747;
+  background: rgba(10,22,40,0.8);
 }
 /* 顶部的图标 */
 #header .header-top span {
@@ -170,18 +144,20 @@ export default {
 /* 导航栏 */
 #header .header-nav {
   height: 110px;
+  margin-left: 20px;
+  position: relative;
 }
 /* 导航栏logo */
 #header .header-nav .header-nav-logo {
-  width: 100px;
+  width: 75px;
   height: 100%;
   float: left;
   position: relative;
 }
 /* 导航栏logo图片 */
 #header .header-nav .header-nav-logo img {
-  width: 95px;
-  height: 45px;
+  width: 75px;
+  height: 75px;
   position: absolute;
   top: 0;
   left: 0;
@@ -195,8 +171,8 @@ export default {
 }
 #header .header-nav .header-nav-wrapper {
   line-height: 110px;
-  float: right;
-  margin: 0;
+  float: left;
+  margin: 0 0 0 30px;
   max-width: 800px;
 }
 /* 导航栏 每个导航 */
@@ -207,8 +183,8 @@ export default {
 }
 /* 导航栏 每个导航下面的 a 链接 */
 #header .header-nav .header-nav-wrapper > li > a {
-  color: #000;
-  font-size: 15px;
+  color: #fff;
+  font-size: 21px;
   font-weight: bold;
   padding: 15px 0;
   position: relative;
@@ -223,7 +199,7 @@ export default {
   height: 2px;
   opacity: 0;
   transition: all 0.6s ease;
-  background-color: #1e73be;
+  background-color: #4fc3f7;
 }
 /* 导航栏 每个导航下面的 a 链接的右侧小三角 */
 #header .header-nav .header-nav-wrapper > li > a > span {
@@ -232,7 +208,7 @@ export default {
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标滑上去的样式 */
 #header .header-nav .header-nav-wrapper > li > a:hover {
-  color: #1e73be;
+  color: #4fc3f7;
   text-decoration: none;
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标滑上去下划线的样式 */
@@ -247,9 +223,9 @@ export default {
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标点击后的样式 */
 #header .header-nav .header-nav-wrapper > li.active > a {
-  color: #1e73be;
+  color: #4fc3f7;
   text-decoration: none;
-  border-bottom: 2px solid #1e73be;
+  border-bottom: 2px solid #4fc3f7;
 }
 /* 导航栏 每个导航下面的二级导航容器 */
 #header .header-nav .header-nav-wrapper > li > dl {
@@ -259,7 +235,7 @@ export default {
   top: 80%;
   left: 0;
   z-index: 999999;
-  box-shadow: 0 0 3px 1px #ccc;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3); background: #0d1b2a;
   background: #fff;
 }
 /* 导航栏 每个导航下面的二级导航容器的每个导航 */
@@ -291,8 +267,8 @@ export default {
   }
   /* 导航栏logo图片 */
   #header .header-nav-m .header-nav-m-logo img {
-    width: 95px;
-    height: 45px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -306,14 +282,14 @@ export default {
     height: 50px;
     font-size: 20px;
     line-height: 50px;
-    background: #474747;
+    background: rgba(10,22,40,0.8);
     position: relative;
   }
   /* 导航栏 菜单图标 */
   #header .header-nav-m .header-nav-m-menu-wrapper {
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: -780px;
     margin-top: -20px;
     width: 50px;
     height: 40px;
@@ -327,7 +303,7 @@ export default {
     top: 50px;
     left: 0;
     width: 100%;
-    background: #474747;
+    background: rgba(10,22,40,0.8);
     z-index: 9999999;
   }
   /* 导航栏 每个导航 */
@@ -339,7 +315,7 @@ export default {
   /* 导航栏 每个导航下面的 a 链接 */
   #header .header-nav-m .header-nav-m-wrapper > li > a {
     color: #fff;
-    font-size: 15px;
+    font-size: 21px;
     font-weight: bold;
     padding: 15px 0;
     position: relative;
@@ -348,5 +324,20 @@ export default {
   #header .header-nav .header-nav-wrapper > li > a > span {
     font-size: 10px;
   }
+}
+
+/* 鍘绘帀鑿滃崟鐐瑰嚮鏃剁殑榛戞 */
+#header a, #header button { outline: none; }
+#header a:focus, #header a:active, #header button:focus, #header button:active { outline: none; }
+
+#header .header-nav-title {
+  position: absolute;
+  right: -780px;
+  top: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 110px;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 </style>

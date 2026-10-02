@@ -20,14 +20,14 @@ export default new Router({
           name: 'home',
           component: resolve => require(['@/view/HomePage'], resolve),
           meta: {
-            title: '首页'
+            title: '首页 - 北航机器人协会'
           }
         }, {
           path: '/software',
           name: 'software',
           component: resolve => require(['@/view/Software'], resolve),
           meta: {
-            title: '软件产品'
+            title: '部门设置 - 北航机器人协会'
           },
           children: [
             {
@@ -39,7 +39,7 @@ export default new Router({
               name: 'software',
               component: resolve => require(['@/view/Software_smartTown'], resolve),
               meta: {
-                title: '软件产品丨智能小镇管理系统'
+                title: '部门设置丨项目部 - 北航机器人协会'
               }
             },
             {
@@ -47,7 +47,7 @@ export default new Router({
               name: 'software',
               component: resolve => require(['@/view/Software_bigData'], resolve),
               meta: {
-                title: '软件产品丨大数据管理系统'
+                title: '部门设置丨活动部与宣传部 - 北航机器人协会'
               }
             }
           ]
@@ -56,35 +56,35 @@ export default new Router({
           name: 'service',
           component: resolve => require(['@/view/Service'], resolve),
           meta: {
-            title: '相关服务'
+            title: '社团活动 - 北航机器人协会'
           }
         }, {
           path: '/newsinformation',
           name: 'newsinformation',
           component: resolve => require(['@/view/NewsInformation'], resolve),
           meta: {
-            title: '新闻动态'
+            title: '新闻动态 - 北航机器人协会'
           }
         }, {
           path: '/companyintroduction',
           name: 'companyintroduction',
           component: resolve => require(['@/view/CompanyIntroduction'], resolve),
           meta: {
-            title: '公司介绍'
+            title: '关于机协 - 北航机器人协会'
           }
         }, {
           path: '/jobchance',
           name: 'jobchance',
           component: resolve => require(['@/view/JobChance'], resolve),
           meta: {
-            title: '工作机会'
+            title: '加入我们 - 北航机器人协会'
           }
         }, {
           path: '/contactus',
           name: 'contactus',
           component: resolve => require(['@/view/ContactUs'], resolve),
           meta: {
-            title: '联系我们'
+            title: '联系我们 - 北航机器人协会'
           }
         },
         {
@@ -92,7 +92,7 @@ export default new Router({
           name: 'servicedetail',
           component: resolve => require(['@/view/ServiceDetail'],resolve),
           meta: {
-            title: '相关服务'
+            title: '社团活动详情 - 北航机器人协会'
           }
         }
       ]

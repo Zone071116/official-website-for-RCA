@@ -1,26 +1,29 @@
 <template>
   <div id="JobChance">
-    <div class="banner container-fuild text-center">工作机会</div>
+    <div class="banner container-fuild text-center">加入我们</div>
     <div class="container">
       <div class="JobChance-container wow pulse">
-        <h2>PHP工程师</h2>
-        <p>岗位职责</p>
+        <h2>招新：三个部门，等你来</h2>
+        <p>我们希望你</p>
         <ol>
-          <li>负责公司产品及项目系统的功能开发、代码优化；</li>
-          <li>负责项目组人员任务的分配与监督，及时解决项目技术问题；</li>
-          <li>参与系统需求分析与设计，并负责完成PHP核心代码，接口规范制定，架构设计。</li>
+          <li>对机器人、硬件制作、科技创新有热情，零基础也欢迎；</li>
+          <li>愿意花时间参与协会活动，和小伙伴一起把想法变成实物；</li>
+          <li>具备团队合作精神，敢于提问、敢于试错。</li>
         </ol>
-        <p>任职要求</p>
+        <p>你可以选择加入</p>
         <ol>
-          <li>精通PHP+MySql+Apache开发，精通使用JavaScript、AJAX、JQuery等技术；3年以上WEB应用程序开发经验， 有大型网站或电子商务网站工作经验者优先；</li>
-          <li>熟悉jQuery，具有AJAX、HTML、CSS、JAVASCRIPT等方面的开发经验；</li>
-          <li>熟悉PHP模板技术、框架技术及设计模式，有php框架系统进行开发经验者优先，如：phpcms，dedecms等；</li>
-          <li>精通数据库原理，精通MYSQL、了解Mongo等并有相关关系数据库设计开发经验, 了解Mysql的数据库配置管理、性能优化；</li>
-          <li>熟悉常见的数据结构和算法，具备良好的编程习惯及较强的文档编写能力；</li>
-          <li>熟悉各种WEB缓存技术,熟悉大型网站构架和性能优化；</li>
-          <li>对网站系统架构的部署、搭建、优化、排错等方面有丰富经验，对高负载、大访问量情况下的系统架构有经验者优先。</li>
+          <li><strong>项目部</strong>：喜欢动手做东西？这里有单片机、结构设计、PCB、3D 打印，带你从 Arduino 入门走向冯如杯、挑战杯赛场；</li>
+          <li><strong>活动部</strong>：擅长策划与执行？一起筹办启先杯、培训、科普讲堂、百团大战，锻炼组织协调与现场把控能力；</li>
+          <li><strong>宣传部</strong>：会拍照、会写推文、会剪视频？用镜头记录机协的每一个精彩瞬间，运营协会对外窗口。</li>
         </ol>
-        <button class="center-block btn btn-warning btn-lg">投递简历</button>
+        <p>你将收获</p>
+        <ol>
+          <li>3D 打印机、焊台、激光雕刻机等设备的使用权限；</li>
+          <li>单片机、结构设计、PCB 绘制等实用技术指导；</li>
+          <li>优先加入冯如杯、挑战杯、全国大学生机器人大赛等项目的机会；</li>
+          <li>技术、组织、沟通、信息获取等全方位综合能力的提升。</li>
+        </ol>
+        <button class="center-block btn btn-warning btn-lg">扫码加入招新群</button>
       </div>
     </div>
   </div>

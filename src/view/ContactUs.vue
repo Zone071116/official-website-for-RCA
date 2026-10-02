@@ -55,18 +55,18 @@ export default {
   },
   mounted() {
     var map = new BMap.Map("map"); // 创建地图实例
-    var point = new BMap.Point(116.301841,40.156506); // 创建点坐标
-    map.centerAndZoom(point, 18); // 初始化地图，设置中心点坐标和地图级别
+    var point = new BMap.Point(116.2965,40.1105); // 北航沙河校区
+    map.centerAndZoom(point, 17); // 初始化地图，设置中心点坐标和地图级别
     map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
     var marker = new BMap.Marker(point); // 创建标注
     map.addOverlay(marker); // 将标注添加到地图中
     var opts = {
-      width: 50, // 信息窗口宽度
-      height: 10, // 信息窗口高度
-      title: "黄元公寓" // 信息窗口标题
+      width: 200, // 信息窗口宽度
+      height: 60, // 信息窗口高度
+      title: "北京航空航天大学沙河校区" // 信息窗口标题
     };
     var infoWindow = new BMap.InfoWindow(
-      "我的家",
+      "北京市昌平区高教园南三街9号",
       opts
     ); // 创建信息窗口对象
     map.openInfoWindow(infoWindow, map.getCenter()); // 打开信息窗口
