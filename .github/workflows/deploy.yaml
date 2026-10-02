@@ -1,38 +1,45 @@
 name: auto-deploy
 
-on: 
-    push: 
-        branches: 
-            - master
+on:
+  push:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: write
 
 jobs:
-    first_job:
-        name: build-and-deploy
-        runs-on: ubuntu-latest
-        steps:
-            # 拉取代码
-            - name: Checkout
-              uses: actions/checkout@v3
-              with:
-                  fetch-depth: 0
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-            # 安装nodejs
-            - name: Setup Node.js
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 8
+      # 安装 Node.js（老 webpack 需要 legacy provider，Node 16 稳妥）
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
 
-            # 安装依赖
-            - name: Install
-              run: npm install
-            
-            # 运行构建脚本
-            - name: Build
-              run: npm run build
+      # 安装依赖
+      - name: Install
+        run: npm install
 
-            # 部署到 GitHub Pages
-            - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                  folder: ./dist
-                  branch: gh-pages
+      # 构建
+      - name: Build
+        env:
+          NODE_OPTIONS: "--openssl-legacy-provider"
+        run: npm run build
+
+      # 部署到 GitHub Pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: ./dist
+          branch: gh-pages
+          clean: true
